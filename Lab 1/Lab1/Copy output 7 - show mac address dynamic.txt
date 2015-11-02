@@ -1,0 +1,15 @@
+
+
+s2#sho mac add dynamic
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    0014.6af4.c592    DYNAMIC     Fa0/1
+   1    0025.455e.8a0d    DYNAMIC     Fa0/11
+   1    0050.56a0.0ea6    DYNAMIC     Fa0/11
+   1    0050.56a0.3e9c    DYNAMIC     Fa0/11
+   1    0050.56a0.4e3d    DYNAMIC     Fa0/1
+Total Mac Addresses for this criterion: 5
+s2#

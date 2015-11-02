@@ -1,0 +1,77 @@
+
+s1#sho span
+
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    24577
+             Address     0025.455e.8a00
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    24577  (priority 24576 sys-id-ext 1)
+             Address     0025.455e.8a00
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  15  sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/1               Desg FWD 19        128.3    P2p
+Fa0/11              Desg FWD 19        128.13   P2p
+
+
+s1#sho span
+
+
+
+
+
+
+s2>sho span
+
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    24577
+             Address     0025.455e.8a00
+             Cost        19
+             Port        13 (FastEthernet0/11)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32769  (priority 32768 sys-id-ext 1)
+             Address     3cdf.1ed8.fa00
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  15  sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/2               Desg FWD 19        128.4    P2p
+Fa0/7               Desg FWD 19        128.9    P2p
+Fa0/11              Root FWD 19        128.13   P2p
+
+
+s2>
+
+
+
+
+
+s3#sho span
+
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    24577
+             Address     0025.455e.8a00
+             Cost        38
+             Port        9 (FastEthernet1/0/7)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32769  (priority 32768 sys-id-ext 1)
+             Address     0017.5af7.7300
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface        Role Sts Cost      Prio.Nbr Type
+---------------- ---- --- --------- -------- --------------------------------
+Fa1/0/3          Desg FWD 19        128.5    P2p
+Fa1/0/7          Root FWD 19        128.9    P2p
+
+s3#
